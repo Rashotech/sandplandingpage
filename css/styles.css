@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+:root {
+    --primary-colour: #D8F3DC;
+    --secondary-colour: #40916C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+    display: flex;
+    background: rgba(245, 245, 245, 0.7);
+    color: #333;
+    padding: 1rem;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+
+#navLink {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navLink a {
+    padding: 0 0.75rem;
+    color: #333;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Showcase */
+#showcase {
+    display: flex;
+    background: var(--primary-colour);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.h-3 {
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+.h-5 {
+    font-family: Poppins;
+    font-size: 0.9rem;
+    width: 400px;
+    padding: 1rem 0;
+}
+
+.h-6 {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1.5rem 0;
+    padding: 0.75rem;
+    background: var(--secondary-colour);
+    border-radius: 5px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+.showcase-pic-1 {
+    transform: translateX(50%) translateY(30%);
+}
+
+#about {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#about #about-text, #about #about-illustration {
+    flex: 1 1 0;
+}
+
+#about-text {
+ padding: 10rem;
+}
+
+#about-text .brd {
+    padding: 0.4rem 0;
+    margin: 0.4rem 0;
+    border-bottom: 3px solid #333;
+    width: 50px;
+}
+
+.illus .brd {
+    margin: 1rem 0;
+    border-bottom: 3px solid #333;
+    width: 50px;
+}
+
+#about-illustration {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.illus {
+    padding: 2rem;
+    align-self: center;
+}
+
+.about-icon {
+    border-radius: 50%;
+    background: var(--secondary-colour);
+    padding: 1rem;
+}
+
+.about-head {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.about-small-text {
+    font-family: Poppins;
+    font-size: 0.75rem;
+    width: 150px;
+}
+
+/* Testimonial */
+#testimonial {
+    background: var(--primary-colour);
+    padding: 3rem;
+}
+#testimonial-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+#testimonial-container div {
+    flex: 1;
+}
+
+.testimonial-card {
+    background: rgba(236, 255, 240, 0.34);;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    width: 300px;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #ECFFF0;
+}
+
+.testimonial-icon {
+    border-radius: 50%;
+    background: var(--secondary-colour);
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem;
+}
+
+.testimonial-name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(30, 29, 21, 0.67);
+}
+
+.testimonial-text p:first-child {
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(30, 29, 21, 0.67);
+}
+
+#testimonial-stars img{
+    width: 25px;
+    height: 25px;
+}
+
+.h-7 {
+    padding-top: 1rem;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+    width: 100%;
+    /* background: #D8F3DC; */
+}
+
+#company-info-2 {
+    float: right;
+}
+
+#contact p {
+    font-weight: 300;
+    font-family: Noto Serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    width: 600px;
+}
+
+#contact-form {
+    display: flex;
+    padding: 2rem;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.contact-input {
+    margin-bottom: 1rem;
+    width: 500px;
+    height: 50px;
+    background: #ECFFF0;  
+    padding: 1rem;
+    font-family: Poppins;
+    font-size: 1rem;
+    border: 1px solid #1E1D15;
+}
+
+input#phone {
+    margin-bottom: 0;
+}
+
+textarea {
+    width: 500px;
+    background: #ECFFF0; 
+    font-family: Poppins;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid #1E1D15;
+}
+
+#contact-textarea textarea {
+    height: 100%;
+}
+
+#contactus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn.contact {
+    width: 200px;
+    align-self: center;
+    margin: 0;
+}
+
+#footer {
+    display: flex;
+    background: var(--secondary-colour);
+    padding: 2rem;
+    color: #fff;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 27px;
+    justify-content: space-between;
+}
+
+#company-info-1 div {
+    padding: 0.5rem;
+    display: flex;
+}
+
+#company-info-1 span, #company-info-1 h1 {
+    padding-left: 10px;
+}
+
+#company-info-1 h1 {
+    margin-bottom: 1rem;
+}
+
+#company-info-1 #address {
+    width: 400px;
+}
+
+#social-icons .icons {
+    padding-left: 20px;
+}
+
+#company-info-3 p {
+    text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+    #showcase-image {
+       display: none;
+    }
+    
+    #showcase-text {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+    }
+    
+    #about-text {
+     padding: 1rem;
+     text-align: justify;
+    }
+
+    #about-text .h-1 {
+        text-align: center;
+    }
+
+    .brd {
+        display: none;
+    }
+
+    #about-text .btn {
+       display: flex;
+       justify-content: center;
+    }
+    
+    #about-illustration {
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    #testimonial-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #testimonial-people {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+    }
+
+    .testimonial-name {
+        font-size: 10px;
+        padding-left: 10px;
+    }
+
+    #testimonial {
+        background: var(--primary-colour);
+        padding: 2rem;
+    }
+    #testimonial-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #testimonial-container div {
+        flex: 1;
+    }
+    
+    .testimonial-card {
+        margin: 0.5rem;
+        width: 400px;
+        align-items: center;
+        padding: 0.5rem;
+        justify-content: space-evenly;
+        border-radius: 5px;
+    }
+    
+    .testimonial-card.active {
+        background: #ECFFF0;
+    }
+    
+    .testimonial-icon {
+        border-radius: 50%;
+        background: var(--secondary-colour);
+        width: 45px;
+        height: 45px;
+        padding: 0.5rem;
+    }
+
+    .about-head.small{
+        font-size: 11px;
+    }
+
+    #contact-form {
+        flex-direction: column;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        margin: auto;
+        width: 100%;
+    }
+    
+    #contact p {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #contact-form {
+        display: flex;
+        padding: 2rem;
+    }
+    
+    .contact-input {
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 50px;
+        padding: 1rem;
+    }
+    
+    textarea {
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    #footer {
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+    }
+    
+    #company-info-1 #address {
+        width: 400px;
+    }
+
+    #company-info-2 {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 1rem;
+    }
+    
+    #company-info-3 p {
+        text-align: left;
+    }
+    
+}
