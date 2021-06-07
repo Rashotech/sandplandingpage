@@ -518,4 +518,8 @@ textarea {
     .about-small-text, .about-head small {
         text-align: center;
     }
+
+    .h-5 {
+        width: 300px;
+    }
 }
