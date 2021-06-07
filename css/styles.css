@@ -404,7 +404,8 @@ textarea {
 
     #testimonial {
         background: var(--primary-colour);
-        padding: 2rem;
+        padding: 1rem;
+        width: 100%;
     }
     #testimonial-container {
         display: flex;
@@ -417,8 +418,8 @@ textarea {
     }
     
     .testimonial-card {
-        margin: 0.5rem;
-        width: 400px;
+        margin: 0.3rem;
+        width: 120px;
         align-items: center;
         padding: 0.5rem;
         justify-content: space-evenly;
@@ -432,17 +433,19 @@ textarea {
     .testimonial-icon {
         border-radius: 50%;
         background: var(--secondary-colour);
-        width: 45px;
-        height: 45px;
-        padding: 0.5rem;
+        width: 30px;
+        height: 30px;
+        padding: 0.3rem;
     }
 
-    .about-head.small{
+3   .about-head.small{
         font-size: 11px;
     }
 
     #contact-form {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #contact {
@@ -479,7 +482,7 @@ textarea {
     }
     
     #footer {
-        padding: 1rem;
+        padding: 0.5rem;
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
@@ -488,7 +491,7 @@ textarea {
     }
     
     #company-info-1 #address {
-        width: 400px;
+        width: 200px;
     }
 
     #company-info-2 {
@@ -502,5 +505,17 @@ textarea {
     #company-info-3 p {
         text-align: left;
     }
+
+    #menu ul li:last-child {
+        display: none;
+    }
+
+    .location-icon {
+        width: 30px;
+        height: 30px;
+    }
     
+    .about-small-text, .about-head small {
+        text-align: center;
+    }
 }
